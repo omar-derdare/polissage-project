@@ -31,17 +31,6 @@
 <body>
 <a class="skip" href="#a-propos">Aller au contenu</a>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <filter id="marble" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
-    <feTurbulence type="turbulence" baseFrequency="0.006 0.014" numOctaves="5" seed="11"/>
-    <feColorMatrix type="matrix" values="1.5 0 0 0 .56  1.5 0 0 0 .53  1.5 0 0 0 .48  0 0 0 0 1"/>
-  </filter>
-  <filter id="m1" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="turbulence" baseFrequency="0.007 0.015" numOctaves="5" seed="3"/><feColorMatrix type="matrix" values="1.5 0 0 0 .62  1.5 0 0 0 .55  1.5 0 0 0 .42  0 0 0 0 1"/></filter>
-  <filter id="m2" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="turbulence" baseFrequency="0.007 0.015" numOctaves="5" seed="21"/><feColorMatrix type="matrix" values="1.0 0 0 0 .14  1.0 0 0 0 .14  1.0 0 0 0 .15  0 0 0 0 1"/></filter>
-  <filter id="m3" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="turbulence" baseFrequency="0.007 0.015" numOctaves="5" seed="8"/><feColorMatrix type="matrix" values="1.5 0 0 0 .66  1.5 0 0 0 .5  1.5 0 0 0 .47  0 0 0 0 1"/></filter>
-  <filter id="m4" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="turbulence" baseFrequency="0.007 0.015" numOctaves="5" seed="5"/><feColorMatrix type="matrix" values="1.5 0 0 0 .58  1.5 0 0 0 .56  1.5 0 0 0 .52  0 0 0 0 1"/></filter>
-</svg>
-
 <aside class="float" aria-label="Contact rapide">
   <a href="https://wa.me/212600000000?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20le%20polissage%20de%20mon%20marbre." class="f-wa" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
   <a href="https://www.instagram.com/polissagedemarbre" class="f-ig" target="_blank" rel="noopener" aria-label="Voir Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
@@ -83,8 +72,8 @@
     </div>
 
     <figure class="ba" id="ba" style="--pos:50%">
-      <div class="layer before"><svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><rect width="800" height="600" filter="url(#marble)"/></svg><div class="dull"></div></div>
-      <div class="layer after"><svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><rect width="800" height="600" filter="url(#marble)"/></svg><div class="shine"></div></div>
+      <div class="layer before"><img src="images/befor.jpg" alt="Dalle de marbre ternie, rayée et tachée avant polissage" width="1000" height="1100" fetchpriority="high"></div>
+      <div class="layer after"><img src="images/after.jpg" alt="La même dalle de marbre brillante après polissage" width="1000" height="1100" fetchpriority="high"></div>
       <span class="tag t-l">Avant</span><span class="tag t-r">Après</span>
       <span class="handle" aria-hidden="true"></span>
       <input type="range" min="0" max="100" value="50" aria-label="Comparer avant et après">
@@ -102,7 +91,7 @@
 
 <section id="a-propos" class="sec">
   <div class="wrap split">
-    <div class="tile about-img" data-m="1" role="img" aria-label="Dalle de marbre polie"></div>
+    <div class="tile about-img"><img src="images/about.jpg" alt="Dalle de marbre polie de notre atelier" width="800" height="1000" loading="lazy" decoding="async"></div>
     <div>
       <h2>Un atelier de restauration, pas une simple entreprise de nettoyage</h2>
       <p>Depuis quinze ans, nous redonnons vie aux sols en marbre, travertin et granito du nord-ouest du Maroc. Notre équipe travaille sur place, avec des disques diamantés et des produits adaptés à chaque pierre.</p>
@@ -119,10 +108,10 @@
   <div class="wrap">
     <h2>Chaque pierre se traite à sa façon</h2>
     <div class="stones">
-      <div class="tile" data-m="1"><div class="cap"><h3>Marbre</h3><p>Carrare, Botticino, beige de Marrakech.</p></div></div>
-      <div class="tile" data-m="3"><div class="cap"><h3>Travertin</h3><p>Pores rebouchés, teinte ravivée.</p></div></div>
-      <div class="tile" data-m="2"><div class="cap"><h3>Granito et terrazzo</h3><p>Ponçage progressif, finition lisse.</p></div></div>
-      <div class="tile" data-m="4"><div class="cap"><h3>Pierre naturelle</h3><p>Granit, grès, pierre bleue.</p></div></div>
+      <div class="tile"><img src="images/pierre-marbre.jpg" alt="Marbre blanc veiné" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Marbre</h3><p>Carrare, Botticino, beige de Marrakech.</p></div></div>
+      <div class="tile"><img src="images/pierre-travertin.jpg" alt="Travertin beige" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Travertin</h3><p>Pores rebouchés, teinte ravivée.</p></div></div>
+      <div class="tile"><img src="images/pierre-granito.jpg" alt="Granito sombre" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Granito et terrazzo</h3><p>Ponçage progressif, finition lisse.</p></div></div>
+      <div class="tile"><img src="images/pierre-naturelle.jpg" alt="Pierre naturelle rosée" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Pierre naturelle</h3><p>Granit, grès, pierre bleue.</p></div></div>
     </div>
   </div>
 </section>
@@ -131,11 +120,11 @@
   <div class="wrap"><h2>Cinq gestes pour redonner vie à la pierre</h2></div>
   <div class="swiper serviceSwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide tile" data-m="1"><div class="cap"><h3>Polissage et lustrage</h3><p>Un miroir profond, sans produit agressif.</p></div></div>
-      <div class="swiper-slide tile" data-m="2"><div class="cap"><h3>Ponçage et rénovation</h3><p>Rayures et usure effacées avant la finition.</p></div></div>
-      <div class="swiper-slide tile" data-m="3"><div class="cap"><h3>Traitement des taches</h3><p>Huile, rouille, calcaire, vin.</p></div></div>
-      <div class="swiper-slide tile" data-m="4"><div class="cap"><h3>Cristallisation</h3><p>Une brillance durable qui durcit la surface.</p></div></div>
-      <div class="swiper-slide tile" data-m="1"><div class="cap"><h3>Protection et entretien</h3><p>Imperméabilisant et contrats d'entretien.</p></div></div>
+      <div class="swiper-slide tile"><img src="images/service-polissage.jpg" alt="Sol en marbre poli avec un reflet miroir" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Polissage et lustrage</h3><p>Un miroir profond, sans produit agressif.</p></div></div>
+      <div class="swiper-slide tile"><img src="images/service-poncage.jpg" alt="Ponçage d'une dalle de marbre sombre" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Ponçage et rénovation</h3><p>Rayures et usure effacées avant la finition.</p></div></div>
+      <div class="swiper-slide tile"><img src="images/service-taches.jpg" alt="Dalle de travertin après traitement des taches" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Traitement des taches</h3><p>Huile, rouille, calcaire, vin.</p></div></div>
+      <div class="swiper-slide tile"><img src="images/service-cristallisation.jpg" alt="Marbre rosé cristallisé et brillant" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Cristallisation</h3><p>Une brillance durable qui durcit la surface.</p></div></div>
+      <div class="swiper-slide tile"><img src="images/service-protection.jpg" alt="Marbre blanc protégé et entretenu" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Protection et entretien</h3><p>Imperméabilisant et contrats d'entretien.</p></div></div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -169,11 +158,11 @@
   <div class="wrap"><h2>Réalisations récentes</h2></div>
   <div class="swiper gallerySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide tile" data-m="1"><div class="cap"><h3>Villa à Rabat</h3><p>Salon de 90 m²</p></div></div>
-      <div class="swiper-slide tile" data-m="3"><div class="cap"><h3>Riad à Salé</h3><p>Patio et escalier</p></div></div>
-      <div class="swiper-slide tile" data-m="4"><div class="cap"><h3>Hôtel à Tanger</h3><p>Hall et réception</p></div></div>
-      <div class="swiper-slide tile" data-m="2"><div class="cap"><h3>Commerce à Kénitra</h3><p>Showroom de 200 m²</p></div></div>
-      <div class="swiper-slide tile" data-m="1"><div class="cap"><h3>Villa à Asilah</h3><p>Terrasse en travertin</p></div></div>
+      <div class="swiper-slide tile"><img src="images/realisation-rabat.jpg" alt="Salon en marbre d'une villa à Rabat" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Villa à Rabat</h3><p>Salon de 90 m²</p></div></div>
+      <div class="swiper-slide tile"><img src="images/realisation-sale.jpg" alt="Patio et escalier d'un riad à Salé" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Riad à Salé</h3><p>Patio et escalier</p></div></div>
+      <div class="swiper-slide tile"><img src="images/realisation-tanger.jpg" alt="Hall en marbre d'un hôtel à Tanger" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Hôtel à Tanger</h3><p>Hall et réception</p></div></div>
+      <div class="swiper-slide tile"><img src="images/realisation-kenitra.jpg" alt="Showroom en marbre à Kénitra" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Commerce à Kénitra</h3><p>Showroom de 200 m²</p></div></div>
+      <div class="swiper-slide tile"><img src="images/realisation-asilah.jpg" alt="Terrasse en travertin à Asilah" width="800" height="1000" loading="lazy" decoding="async"><div class="cap"><h3>Villa à Asilah</h3><p>Terrasse en travertin</p></div></div>
     </div>
     <div class="swiper-pagination gallery-pagination"></div>
   </div>
@@ -186,7 +175,7 @@
       <p>Une intervention complète en quelques minutes : ponçage, polissage et protection, filmés sur chantier.</p>
     </div>
     <div class="video" id="video-box">
-      <button id="play-reel" class="tile poster" data-m="3" aria-label="Lancer la vidéo"><span class="play">▶</span></button>
+      <button id="play-reel" class="tile poster" aria-label="Lancer la vidéo"><img src="images/video-poster.jpg" alt="Aperçu de la vidéo de polissage de marbre" width="1000" height="625" loading="lazy" decoding="async"><span class="play">▶</span></button>
     </div>
   </div>
 </section>
@@ -230,9 +219,9 @@
   <div class="wrap">
     <h2>Conseils pour garder un marbre éclatant</h2>
     <div class="tips">
-      <article><div class="tile" data-m="1"></div><h3>Entretenir un sol en marbre au quotidien</h3><p>Eau tiède, serpillière douce, pas de vinaigre ni de javel : les gestes qui préservent la brillance.</p></article>
-      <article><div class="tile" data-m="3"></div><h3>Ponçage ou cristallisation ?</h3><p>Le premier efface les rayures, la seconde fait durer la brillance. Comment choisir selon l'état de votre sol.</p></article>
-      <article><div class="tile" data-m="4"></div><h3>Cinq erreurs qui ternissent le marbre</h3><p>Produits acides, mauvais balai, absence de protection : ce qu'il vaut mieux éviter.</p></article>
+      <article><div class="tile"><img src="images/conseil-1.jpg" alt="Entretien quotidien d'un sol en marbre" width="800" height="1000" loading="lazy" decoding="async"></div><h3>Entretenir un sol en marbre au quotidien</h3><p>Eau tiède, serpillière douce, pas de vinaigre ni de javel : les gestes qui préservent la brillance.</p></article>
+      <article><div class="tile"><img src="images/conseil-2.jpg" alt="Ponçage ou cristallisation du travertin" width="800" height="1000" loading="lazy" decoding="async"></div><h3>Ponçage ou cristallisation ?</h3><p>Le premier efface les rayures, la seconde fait durer la brillance. Comment choisir selon l'état de votre sol.</p></article>
+      <article><div class="tile"><img src="images/conseil-3.jpg" alt="Marbre rosé ternis par de mauvais produits" width="800" height="1000" loading="lazy" decoding="async"></div><h3>Cinq erreurs qui ternissent le marbre</h3><p>Produits acides, mauvais balai, absence de protection : ce qu'il vaut mieux éviter.</p></article>
     </div>
   </div>
 </section>
@@ -254,10 +243,10 @@
     <div><h2>Suivez nos chantiers sur Instagram</h2><p>Avant, après et coulisses de chaque intervention.</p>
     <a href="https://www.instagram.com/polissagedemarbre" class="btn btn-dark" target="_blank" rel="noopener"><i class="ph-fill ph-instagram-logo"></i> Suivre @polissagedemarbre</a></div>
     <div class="igrid">
-      <a href="https://www.instagram.com/polissagedemarbre" class="tile" data-m="1" target="_blank" rel="noopener" aria-label="Instagram"></a>
-      <a href="https://www.instagram.com/polissagedemarbre" class="tile" data-m="4" target="_blank" rel="noopener" aria-label="Instagram"></a>
-      <a href="https://www.instagram.com/polissagedemarbre" class="tile" data-m="3" target="_blank" rel="noopener" aria-label="Instagram"></a>
-      <a href="https://www.instagram.com/polissagedemarbre" class="tile" data-m="2" target="_blank" rel="noopener" aria-label="Instagram"></a>
+      <a href="https://www.instagram.com/polissagedemarbre" class="tile" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="images/insta-1.jpg" alt="Chantier de polissage de marbre" width="800" height="1000" loading="lazy" decoding="async"></a>
+      <a href="https://www.instagram.com/polissagedemarbre" class="tile" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="images/insta-2.jpg" alt="Marbre rosé après traitement" width="800" height="1000" loading="lazy" decoding="async"></a>
+      <a href="https://www.instagram.com/polissagedemarbre" class="tile" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="images/insta-3.jpg" alt="Travertin restauré" width="800" height="1000" loading="lazy" decoding="async"></a>
+      <a href="https://www.instagram.com/polissagedemarbre" class="tile" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="images/insta-4.jpg" alt="Granito poncé" width="800" height="1000" loading="lazy" decoding="async"></a>
     </div>
   </div>
 </section>

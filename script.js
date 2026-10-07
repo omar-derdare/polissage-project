@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Generated marble tiles (swap for <img> when real photos are available)
-  document.querySelectorAll('.tile').forEach(t => t.insertAdjacentHTML('afterbegin',
-    '<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="500" filter="url(#m' + (t.dataset.m || 1) + ')"/></svg>'));
-
   // Smooth scroll (Lenis)
   const lenis = new Lenis({ duration: 1.1, smoothTouch: false });
   if (!reduce) { (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(0); }

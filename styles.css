@@ -55,12 +55,8 @@ h3{font-size:1.6rem}
 /* before / after (generated marble) */
 .ba{position:relative;aspect-ratio:4/4.4;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 60px -30px rgba(31,30,28,.45);user-select:none}
 .layer{position:absolute;inset:0}
-.layer svg{width:100%;height:100%;display:block}
-.before svg{filter:grayscale(.55) brightness(.8) contrast(.8)}
-.dull{position:absolute;inset:0;background:radial-gradient(circle at 25% 30%,rgba(90,70,40,.35),transparent 18%),radial-gradient(circle at 70% 65%,rgba(60,50,40,.3),transparent 22%),repeating-linear-gradient(115deg,transparent 0 14px,rgba(255,255,255,.07) 14px 15px)}
+.layer img{width:100%;height:100%;object-fit:cover;display:block}
 .after{clip-path:inset(0 0 0 var(--pos))}
-.after svg{filter:brightness(1.12) contrast(1.05)}
-.shine{position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.55) 45%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(255,255,255,.35),transparent 40%)}
 .tag{position:absolute;top:1.2rem;padding:.35rem .9rem;border-radius:99px;background:rgba(248,245,239,.9);font-size:.85rem}
 .t-l{left:1.2rem}.t-r{right:1.2rem}
 .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:var(--ivory);transform:translateX(-1px);pointer-events:none}
@@ -209,9 +205,10 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-col
 
 /* hero background image */
 .hero{
-  background-image:linear-gradient(90deg,rgba(248,245,239,.96) 0,rgba(248,245,239,.82) 38%,rgba(248,245,239,.25) 100%),url('images/hero.jpeg');
+  background-color:#e9e1d3;
+  background-image:linear-gradient(90deg,rgba(248,245,239,.9) 0,rgba(248,245,239,.62) 40%,rgba(248,245,239,.08) 100%),url('images/hero.jpeg');
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
 }
-@media(max-width:959px){.hero{background-image:linear-gradient(rgba(248,245,239,.84),rgba(248,245,239,.84)),url('images/hero.jpeg')}}
+@media(max-width:959px){.hero{background-image:linear-gradient(rgba(248,245,239,.72),rgba(248,245,239,.72)),url('images/hero.jpeg')}}
